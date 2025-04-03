@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica - Reserva de Citas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Colsubsidio_logo.svg/2560px-Colsubsidio_logo.svg.png" alt="Logo Clínica Médica" class="logo">
+            <h1>Reserva tu Cita Médica</h1>
+        </div>
+        <button id="toggle-contrast">Modo Contraste</button>
+    </header>
+    <main>
+        <div class="container">
+            <section id="citas">
+                <h2>Agendar Cita</h2>
+                <form id="form-cita">
+                    <label for="especialidad">Especialidad:</label>
+                    <select id="especialidad" name="especialidad">
+                        <option value="general">General</option>
+                        <option value="cardiologia">Cardiología</option>
+                        <option value="dermatologia">Dermatología</option>
+                    </select>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <button type="submit">Reservar Cita</button>
+                </form>
+                <div id="mensaje-confirmacion"></div>
+            </section>
+            <section id="historial">
+                <h2>Historial de Citas</h2>
+                <ul id="citas-pasadas">
+                    <!-- Aquí se mostrarán las citas pasadas -->
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Clínica Médica - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
